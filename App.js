@@ -1,20 +1,24 @@
+import { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import TelaInicio from './src/telas/TelaInicio';
+import TelaJogo from './src/telas/TelaJogo';
 
 export default function App() {
+  const [comecou, setComecou] = useState(false);
+
+  if (!comecou) {
+    return (
+      <>
+        <StatusBar style="dark" />
+        <TelaInicio onComecar={() => setComecou(true)} />
+      </>
+    );
+  }
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+      <StatusBar style="dark" />
+      <TelaJogo />
+    </>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
