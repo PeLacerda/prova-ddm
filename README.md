@@ -16,14 +16,6 @@ Demonstrar, de forma simples:
 3. Uso do **acelerômetro** com `expo-sensors`
 4. Geração de um arquivo **.apk** para instalar no Android
 
-## Como gerar / instalar o APK
-
-O arquivo instalável fica em:
-
-```
-apk/o-que-voce-prefere.apk
-```
-
 Transfira esse arquivo para o Android e abra-o para instalar (permita “fontes desconhecidas” se o sistema pedir).
 
 ## Bibliotecas usadas
