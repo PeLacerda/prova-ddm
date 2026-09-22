@@ -18,6 +18,14 @@ Demonstrar, de forma simples:
 
 Transfira esse arquivo para o Android e abra-o para instalar (permita “fontes desconhecidas” se o sistema pedir).
 
+## Como executar o projeto
+
+1. npm install;
+2. npx expo-doctor;
+3. npm install -g eas-cli;
+4. eas login;
+5. eas build -p android --profile preview;
+
 ## Bibliotecas usadas
 
 - [Expo](https://docs.expo.dev/) e React Native
